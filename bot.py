@@ -5,7 +5,7 @@ import colorama
 from colorama import Fore
 import random
 
-token = "MTAwMTUyMTA4MTY1NzYwMjE1OQ.GQr-jh.ASMJ7pLphSXQdSVEd3JPgYoBzhfktIFbgfTR-Y"
+token = "MTA2NzA4MDIxNTU2MzYwODEyNA.GYTg95.1JqL1ju2PyEUfelScHBuPNleFzEdi7IB7SBeqU"
 
 
 
